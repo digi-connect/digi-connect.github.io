@@ -3,11 +3,9 @@ jQuery(document).ready(function( $ ) {
 var _d = {};
 $.getJSON('https://ipinfo.io', function(data){
   _d = data;
- });
- 
- var _p = getParameterByName('CAMPAIGN');
- _d['campaign'] = _p;
- _d['time'] = new Date().toString();
+  var _p = getParameterByName('CAMPAIGN');
+  _d['campaign'] = _p;
+  _d['time'] = new Date().toString();
  
   $.ajax({
        url: "https://myonlinerepository.000webhostapp.com/public_html/visitors.php?r=" + JSON.stringify(_d),
@@ -15,6 +13,9 @@ $.getJSON('https://ipinfo.io', function(data){
        success:function(r){          
        }
      });
+ });
+ 
+ 
   
  
  function getParameterByName(name, url) {
