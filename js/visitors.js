@@ -19,6 +19,7 @@ var maindiv = $('#visits');
         var td8="<td>"+obj[i]["time"]+"</td></tr>";    
 
         $("#mytable").append(tr+td1+td2+td3+td4+td5+td6+td7+td8); 
+    }
 });
 
  });
