@@ -1,5 +1,4 @@
-jQuery(document).ready(function( $ ) {
- 
+
 var _d = {};
 $.getJSON('https://ipinfo.io', function(data){
   _d = data;
@@ -27,7 +26,16 @@ $.getJSON('https://ipinfo.io', function(data){
     if (!results[2]) return '';
     return decodeURIComponent(results[2].replace(/\+/g, " "));
 }
- 
+
+
+
+
+
+
+
+
+jQuery(document).ready(function( $ ) {
+  
   // Back to top button
   $(window).scroll(function() {
     if ($(this).scrollTop() > 100) {
