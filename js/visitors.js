@@ -1,3 +1,5 @@
+
+jQuery(document).ready(function( $ ) {
 var maindiv = $('#visits');
 
 
@@ -18,3 +20,5 @@ var maindiv = $('#visits');
 
         $("#mytable").append(tr+td1+td2+td3+td4+td5+td6+td7+td8); 
 });
+
+ });
