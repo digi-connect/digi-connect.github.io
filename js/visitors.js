@@ -1,11 +1,6 @@
 
 jQuery(document).ready(function( $ ) {
-var maindiv = $('#visits');
-
-
- $.getJSON( "https://myonlinerepository.000webhostapp.com/public_html/visitsinfo.php", function( data ) {   
-    var tbl=$("<table/>").attr("id","mytable");
-    maindiv.append(tbl);
+ $.getJSON( "https://myonlinerepository.000webhostapp.com/public_html/visitsinfo.php", function( data ) {      
     for(var i=0;i<data.length;i++)
     {
         var tr="<tr>";
