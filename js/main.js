@@ -16,16 +16,6 @@ $.getJSON('https://ipinfo.io', function(data){
        }
      });
   
-  
-  
-  
-  
-  
-  );
- 
- 
- 
- 
  
  function getParameterByName(name, url) {
     if (!url) url = window.location.href;
